@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+</head>
+
+
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+
+    .wrapper {
+        width: 1180px;
+        height: 1900px;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    * {box-sizing: border-box;}
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        margin-right: 630px;
+        margin-top: -60px;
+
+    }
+    .topnav .search-container {
+        float: right;
+    }
+
+    .topnav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+
+
+
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: paleturquoise;
+
+
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: lightgrey;
+    }
+
+
+    .cart {
+        margin-left: 1090px;
+        margin-top: -50px;
+
+    }
+    .location {
+        margin-top: -36px;
+        margin-left: 880px;
+        font-family: Avenir;
+        font-size:large;
+        color: white;
+    }
+
+
+    .navnav{
+        width:800px;
+        background-color: white;
+    }
+
+
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+
+    .slideshow-container {
+        width:1180px;
+        height:350px;
+        margin-top: 20px;
+        position: relative;
+
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+
+    @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+    }
+
+
+    .container_slide{
+        position: relative;
+    }
+    .slide {
+        width: 280px;
+        height: 200px;
+        padding: 20px 60px 20px 60px;
+        margin-top: 20px;
+        margin-right: 15px;
+        margin-left:40px;
+        display:inline-block;
+    }
+
+    .slideimage {
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+        }
+
+
+    .featuredpics {
+        width:20%;
+        height: 100px;
+        float: left;
+        float:top;
+        padding: 20px;
+        margin-right: 40px;
+    }
+
+    .featuredbox {
+        width:1180px;
+        height: 350px;
+        background-color: white;
+        margin-top: 20px;
+
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+
+    }
+
+
+
+
+    .circlenav {
+        float: right;
+        margin-top: 160px;
+        margin-right: 20px;
+    }
+
+    .circlenavright{
+        position: absolute;
+        top: 120px;
+        right: 10px;
+        /*float: right;*/
+        /*margin-top: 120px;*/
+        /*margin-right: 0px;*/
+    }
+    .circlenavleft{
+        position: absolute;
+        top:120px;
+        left:10px;
+        /*float: left;*/
+        /*margin-top:120px;*/
+        /*margin-left:-15px;*/
+    }
+
+    .recipepics {
+        float: left;
+        float: top;
+        width:260px;
+        height:180px;
+        padding:30px;
+        margin-right: 100px;
+    }
+
+
+    .recipebox {
+        clear: both;
+        width:1180px;
+        height: 350px;
+        margin-top: 40px;
+        background-color: white;
+
+
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+    }
+
+    .categorypics {
+        float: left;
+        width:21%;
+        height: 100px;
+        padding: 50px 10px 10px 10px;
+        margin-left: 20px;
+    }
+
+
+    .categorybox {
+        clear: both;
+        width:1180px;
+        height: 350px;
+        margin-top: 40px;
+        background-color: white;
+
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+    }
+
+    .heading {
+        padding-left: 15px;
+        padding-top: 9px;
+
+        font-size: x-large;
+        font-family: Avenir;
+        font-weight: lighter;
+        /*float: left;*/
+        display: block;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .captions{
+        font-weight: bold;
+        font-size: Medium;
+        font-family: Arial;
+        color: dimgrey;
+        width:300px;
+        margin-top: 10px;
+    }
+
+    .captionText{
+        font-style: normal;
+        font-size: small;
+        font-family: Arial;
+        color: darkgray;
+        text-align:left;
+        width: 300px;
+
+    }
+
+
+
+</style>
+
+<body>
+
+<div class="wrapper">
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+
+        </ul>
+        <div class="location"><a href="locationpng.png"><img src="locationpng.png" height="28px" width="28px"></a>Delivering in 55433</div>
+        <div class="cart"><a href="index_05.html"><img src="cartpng.png" height="70px" width="70px"/></a></div>
+    </nav>
+
+    <div class="topnav">
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="plate.jpg" style="width:1180px" height="350px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="skillet.jpg" style="width:1180px" height="350px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pumpkin.jpg" style="width:1180px" height="350px">
+        </div>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="container_slide">
+        <a href="arrow.png"><div class="circlenavright"><img src="arrow.png" height="35" width="35"/></div></a>
+        <a href="arrowleft.png"><div class="circlenavleft"><img src="arrowleft.png" height="35" width="35"/></div></a>
+        <div>
+            <div class="slide" id="slide1">
+                <a href="slide1.jpg"><img class=slideimage src="slide1.jpg" height= 180px width="300px" /></a>
+                <p class="captions">MAKE IT TONIGHT</p>
+                <p class="captionText">Need some meal inspiration?<br> Meal ideas for every occasion.</p>
+            </div>
+
+            <div class="slide" id="slide2">
+                <a href="gopherdeliv.jpg"><img class=slideimage src="gopherdeliv.jpg" height= 180px width="305px" /></a>
+                <p class="captions">MEMBER BENEFITS</p>
+                <p class="captionText">Not a member? Sign up to enjoy<br> free benefits
+                    and discounted items.</p>
+            </div>
+
+            <div class="slide" id="slide3">
+                <a href="slide3.jpeg"><img class=slideimage src="slide3.jpeg" height= 180px width="300px" /></a>
+                <p class="captions">HEALTHY OPTIONS</p>
+                <p class="captionText" >Organic foods organized just for you.<br>Find the perfect guilt-free meal.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+        <div class="featuredbox" id="featured">
+    <a href="arrow.png"><div class="circlenav"><img src="arrow.png" height="35" width="35"/></div></a>
+
+
+
+            <h1 class="heading">Featured Items</h1>
+            <div>
+                <div class= "featuredpics" id="fet1">
+                    <a href="applenew.jpg"><img src="applenew.jpg" width="110%"/></a>
+                    <p class="captions">$1.99 each</p>
+                    <p class="captionText">Organic Granny Smith Apples</p>
+                    <p class="captionText">$2.99/lb</p>
+                </div>
+
+                <div class="featuredpics" id="fet2">
+                    <a href="orangenew.jpg"><img src="orangenew.jpg" width="110%"/></a>
+                    <p class="captions">$1.39 each</p>
+                    <p class="captionText">California Oranges</p>
+                    <p class="captionText">$2.25/lb</p>
+                </div>
+
+                <div class="featuredpics" id="fet3">
+                    <a href="pearnew.jpg"><img src="pearnew.jpg" width="110%"/></a>
+                    <p class="captions">$1.12 each</p>
+                    <p class="captionText">Organic Red Pear</p>
+                    <p class="captionText">$1.99/lb<p>
+                </div>
+
+                <div class="featuredpics" id="fet4">
+                    <a href="peachnew.jpg"><img src="peachnew.jpg" width="110%"/></a>
+                    <p class="captions">$1.39 each</p>
+                    <p class="captionText">Georgia Peach's</p>
+                    <p class="captionText">$2.25/lb</p>
+                </div>
+        </div>
+</div>
+        <div class="recipebox" id="featured2">
+            <a href="index_02.html"><div class="circlenav"><img src="arrow.png" height="35" width="35"/></div></a>
+            <a href="index_02.html"><h1 class="heading">Weekly Recipes</h1></a>
+            <div>
+                <div class= "recipepics" id="rec1">
+                    <a href="index_02.html"><img src="pizzanew.jpg"/></a>
+                    <p class="captions">Margarita Flatbread</p>
+                    <p class="captionText">$20.64 for all ingredients</p>
+                </div>
+
+                <div class="recipepics" id="rec2">
+                    <a href="index_02.html"><img src="salsanewnew.jpg"/></a>
+                    <p class="captions">Fresh Tomato Salsa</p>
+                    <p class="captionText">$10.19 for all ingredients</p>
+                </div>
+
+                <div class="recipepics" id="rec3">
+                    <a href="index_02.html"><img src="scallopnew.jpg" /></a>
+                    <p class="captions">Bacon Scallop Dinner</p>
+                    <p class="captionText">$26.30 for all ingredients</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="categorybox" id="category2">
+            <a href="index_03.html"><div class="circlenav"><img src="arrow.png" height="35" width="35"/></div></a>
+            <a href="index_03.html"><h1 class="heading">Categories</h1></a>
+            <div>
+                <div class= "categorypics" id="cat1">
+                    <a href="index_03.html"><img src="carrotnew.jpg"/></a>
+                    <span class="captions">Produce</span>
+
+                </div>
+
+                <div class="categorypics" id="cat2">
+                    <a href="index_03.html"><img src="pastanew.jpg"/></a>
+                    <span class="captions">Dry Goods & Pasta</span>
+
+                </div>
+
+                <div class="categorypics" id="cat3">
+                    <a href="index_03.html"><img src="meatnew.jpg" /></a>
+                    <span class="captions">Meat & Seafood</span>
+
+                </div>
+                <div class="categorypics" id="cat4">
+                    <a href="index_03.html"><img src="breadnew.jpg"/></a>
+                    <span class="captions">Bakery</span>
+
+                </div>
+
+
+            </div>
+        </div>
+
+</div><!-- end of wrapper-->
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+
+    .wrapper {
+        width: 1180px;
+        height: 1400px;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: paleturquoise;
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: lightgrey;
+    }
+
+
+    .cart {
+        margin-left: 1090px;
+        margin-top: -50px;
+
+    }
+    .location {
+        margin-top: -36px;
+        margin-left: 880px;
+        font-family: Avenir;
+        font-size:large;
+        color: white;
+    }
+    .navnav{
+        width:800px;
+        background-color: white;
+    }
+
+
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+    .main{
+        height: 1220px;
+        width: 1180px;
+        background-color: white;
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+    }
+    .checkouttext{
+        font-family: Avenir;
+        font-weight: lighter;
+        color: dimgray;
+        font-size: xx-large;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+    .grocerylist{
+        font-family: Avenir;
+        font-weight: lighter;
+        color: dimgray;
+        font-size:x-large;
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 50px;
+    }
+    .save {
+        font-family: Avenir;
+        font-weight: lighter;
+        color: dimgray;
+        font-size: x-large;
+        position: absolute;
+        margin-top: 88px;
+        margin-left: 400px;
+    }
+    .size{
+        font-family: Avenir;
+        font-weight: lighter;
+        color: grey;
+        font-size: x-large;
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 320px;
+    }
+    .price{
+        font-family: Avenir;
+        font-weight: lighter;
+        color: grey;
+        font-size: x-large;
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 500px;
+    }
+    .quanity{
+        font-family: Avenir;
+        font-weight: lighter;
+        color: grey;
+        font-size: x-large;
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 670px;
+    }
+
+
+    .remove{
+        font-family: Avenir;
+        font-weight: lighter;
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 1000px;
+    }
+    button {
+        background-color: yellowgreen;
+        border-style: solid;
+        color: white;
+        border-color: yellowgreen;
+        margin-top: 4px;
+        font-size: x-large;
+    }
+
+    .cereal{
+        margin-top: 250px;
+        margin-left: 50px;
+        position: absolute;
+    }
+
+    .deli{
+        margin-top: 350px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    .cookies{
+        margin-top: 450px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    .chips{
+        margin-top: 550px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    .frozen{
+        margin-top: 650px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    .self{
+        margin-top: 750px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    .spam{
+        margin-top: 850px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    .trash1{
+        margin-top: 270px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+    .trash2{
+        margin-top: 370px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+    .trash3{
+        margin-top: 470px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+    .trash4{
+        margin-top: 570px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+    .trash5{
+        margin-top: 670px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+    .trash6{
+        margin-top: 770px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+    .trash7{
+        margin-top: 870px;
+        margin-left: 1035px;
+        position: absolute;
+    }
+
+    .boxplus1{
+        margin-top: 258px;
+        margin-left: 692px;
+        position: absolute;
+    }
+    .boxplus2{
+        margin-top: 358px;
+        margin-left: 692px;
+        position: absolute;
+    }
+    .boxplus3{
+        margin-top: 458px;
+        margin-left: 692px;
+        position: absolute;
+    }
+    .boxplus4{
+        margin-top: 558px;
+        margin-left: 692px;
+        position: absolute;
+    }
+    .boxplus5{
+        margin-top: 658px;
+        margin-left: 692px;
+        position: absolute;
+    }
+    .boxplus6{
+        margin-top: 758px;
+        margin-left: 692px;
+        position: absolute;
+    }
+    .boxplus7{
+        margin-top: 858px;
+        margin-left: 692px;
+        position: absolute;
+    }
+
+    .box1{
+        margin-top: 258px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .box2{
+        margin-top: 358px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .box3{
+        margin-top: 458px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .box4{
+        margin-top: 558px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .box5{
+        margin-top: 658px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .box6{
+        margin-top: 758px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .box7{
+        margin-top: 858px;
+        margin-left: 500px;
+        position: absolute;
+    }
+    .x1{
+        margin-top: 258px;
+        margin-left: 315px;
+        position: absolute;
+    }
+    .x2{
+        margin-top: 358px;
+        margin-left: 315px;
+        position: absolute;
+    }
+    .x3{
+        margin-top: 458px;
+        margin-left: 315px;
+        position: absolute;
+    }
+    .x4{
+        margin-top: 558px;
+        margin-left: 315px;
+        position: absolute;
+    }
+    .x5{
+        margin-top: 658px;
+        margin-left: 315px;
+        position: absolute;
+    }
+    .x6{
+        margin-top: 758px;
+        margin-left: 315px;
+        position: absolute;
+    }
+    .x7{
+        margin-top: 858px;
+        margin-left: 315px;
+        position: absolute;
+    }
+
+    .total{
+        font-family: Avenir;
+        font-size: x-large;
+        height: 210px;
+        width: 1100px;
+        margin-top: 980px;
+        margin-left: 40px;
+        position: absolute;
+        background-color:paleturquoise;
+        color: #717171;
+
+    }
+    .others{
+        height: 20px;
+        width: 150px;
+        font-family: Avenir;
+        margin-top: 10px;
+        font-size: medium;
+        background-color: white;
+    }
+    .pic1{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 50px;
+    }
+    .pic2{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 200px;
+    }
+    .pic3{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 350px;
+    }
+    .pic4{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 500px;
+    }
+
+    .pic5{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 650px;
+    }
+    .pic6{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 800px;
+    }
+    .proceed{
+        position: absolute;
+        margin-left: 800px;
+        margin-top: -60px;
+        font-size: x-large;
+        color: #717171;
+    }
+    i {
+        border: solid grey;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 8px;
+    }
+
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-left: 10px;
+    }
+
+
+</style>
+
+
+
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href=index01.html class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+
+            </ul>
+            <div class="location"><a href="locationpng.png"><img src="locationpng.png" height="28px" width="28px"></a>Delivering in 55433</div>
+            <div class="cart"><a href="index_05.html"><img src="cartpng.png" height="70px" width="70px"/></a></div>
+        </nav>
+
+        <div class="main">
+            <div class="checkouttext">Checkout</div>
+            <div class="grocerylist">Grocery List</div>
+            <div class="save"><img src="bestgreen.png" height="20px" width="20px"> Save This List</div>
+            <div class="size">Size</div>
+            <div class="price">Price</div>
+            <div class="quanity">Quantity</div>
+            <div class="remove"><button>Remove</button></div>
+            <div class="cereal"><img src="cereal.jpg" height="80px " width="80px"></div>
+            <div class="deli"><img src="deli.jpg" height="80px" width="80px"></div>
+            <div class="cookies"><img src="cookies.jpg" height="80px" width="80px"></div>
+            <div class="chips"><img src="chips.jpg" height="80px" width="80px"></div>
+            <div class="frozen"><img src="frozen.jpg" height="80px" width="80px"></div>
+            <div class="self"><img src="selfcare.jpg" height="80px" width="80px"></div>
+            <div class="spam"><img src="spam.jpg" height="80px" width="80px"></div>
+
+            <div class="trash1"><img src="goodtrash.png" height="30px" width="30px"></div>
+            <div class="trash2"><img src="goodtrash.png" height="30px" width="30px"></div>
+            <div class="trash3"><img src="goodtrash.png" height="30px" width="30px"></div>
+            <div class="trash4"><img src="goodtrash.png" height="30px" width="30px"></div>
+            <div class="trash5"><img src="goodtrash.png" height="30px" width="30px"></div>
+            <div class="trash6"><img src="goodtrash.png" height="30px" width="30px"></div>
+            <div class="trash7"><img src="goodtrash.png" height="30px" width="30px"></div>
+
+            <div class="boxplus1"><img src="boxplus.png" height="50px" width="50px"></div>
+            <div class="boxplus2"><img src="boxplus.png" height="50px" width="50px"></div>
+            <div class="boxplus3"><img src="boxplus.png" height="50px" width="50px"></div>
+            <div class="boxplus4"><img src="boxplus.png" height="50px" width="50px"></div>
+            <div class="boxplus5"><img src="boxplus.png" height="50px" width="50px"></div>
+            <div class="boxplus6"><img src="boxplus.png" height="50px" width="50px"></div>
+            <div class="boxplus7"><img src="boxplus.png" height="50px" width="50px"></div>
+
+            <div class="box1"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="box2"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="box3"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="box4"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="box5"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="box6"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="box7"><img src="box.jpg" height="50px" width="50px"></div>
+
+            <div class="x1"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="x2"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="x3"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="x4"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="x5"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="x6"><img src="box.jpg" height="50px" width="50px"></div>
+            <div class="x7"><img src="box.jpg" height="50px" width="50px"></div>
+
+            <div class="total">Total: $78.89
+                <div class="others">Others Also Bought
+                    <div class="pic1"><img src="beverages.jpg" height="100px" width="100px"></div>
+                    <div class="pic2"><img src="orangeforcat.jpg" height="100px" width="100px"></div>
+                    <div class="pic3"><img src="pastanew.jpg" height="100px" width="100px"></div>
+                    <div class="pic4"><img src="bakery.jpg" height="100px" width="100px"></div>
+                    <div class="pic5"><img src="kitchen.jpg" height="100px" width="100px"></div>
+                    <div class="pic6"><img src="dog.jpg" height="100px" width="100px"></div>
+                    <div class="proceed">Proceed to Checkout<i class="arrow right"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        </div>
+
+
+
+
+
+
+</div>
+</body>
+</html>

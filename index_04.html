@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Recipes</title>
+</head>
+
+<style>
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+
+    .wrapper {
+        width: 1180px;
+        height: 2000px;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    nav {
+        width: 1180px;
+        height: 60px;
+        background-color: paleturquoise;
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+    }
+
+    .elements{
+        float: bottom;
+    }
+
+    .title {
+        float: left;
+        margin-top: 0px;
+
+    }
+    .cart {
+        margin-left: 900px;
+        float: right;
+    }
+    .location {
+        margin-top: 7px;
+        margin-left: 700px;
+        font-family: Avenir;
+        font-size: x-large;
+        color: white;
+    }
+    h2 {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        font-family: Avenir;
+        font-weight: lighter;
+        font-size: medium;
+        margin-left: 200px;
+        border: 1px solid black;
+    }
+
+    .searchbox {
+        position: relative;
+        height: 180px;
+        width: 800px;
+        text-align: center;
+    }
+
+    .avocadopic{
+        height:350px;
+        width:1180px;
+        margin-top: 0px;
+        position: relative;
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+
+    }
+
+    .recipebox {
+        width:1180px;
+        height: 380px;
+        margin-top: 230px;
+        background-color: white;
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+        box-shadow: darkgray;
+    }
+
+    .recipepics {
+        width:340px;
+        height:260px;
+        float: top;
+        float: left;
+
+
+    }
+
+    .headers {
+        margin: 2%;
+        font-size: x-large;
+        font-family: Avenir;
+        font-weight: lighter;
+        float: left;
+    }
+
+    .captions{
+        font-weight: bold;
+        font-size: Medium;
+        font-family: Arial;
+        color: dimgrey;
+    }
+
+    .captionText{
+        font-style: normal;
+        font-size: small;
+        font-family: Arial;
+        color: darkgray;
+    }
+
+</style>
+<body>
+
+<div class="wrapper">
+    <nav>
+        <div class="elements">
+            <div class="title"><a href="title"><img src="nopack.png"/></a></div>
+            <div class="location"><a href="location.psd"><img src="location.psd" height="30px" width="30px"></a>Delivering in 55433</div>
+            <div class="cart"><a href="cart.psd"><img src="cart.psd" height="40px" width="70px"/></a></div>
+        </div>
+    </nav>
+
+    <div class="searchbox">
+        <img class=avocadopic src="avocadonew.jpg" height="350px" width="1180px" />
+        <h2>Search Gopher Grocery</h2>
+    </div>
+
+
+
+
+
+
+    <div class="recipebox" id="featured2">
+        <h1 class="headers">Weekly Recipes</h1>
+        <div>
+            <div class= "recipepics" id="rec1">
+                <img src="pizzanew.jpg"/>
+                <span class="captions">Margarita Flatbread</span>
+                <span class="captionText">$20.64 for all ingredients</span>
+            </div>
+
+            <div class="recipepics" id="rec2">
+                <img src="salsanewnew.jpg"/>
+                <span class="captions">Fresh Tomato Salsa</span>
+                <span class="captionText">$10.19 for all ingredients</span>
+            </div>
+
+            <div class="recipepics" id="rec3">
+                <img src="scallopnew.jpg" />
+                <span class="captions">Bacon Scallop Dinner</span>
+                <span class="captionText">$26.30 for all ingredients</span>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+</body>
+</html>
